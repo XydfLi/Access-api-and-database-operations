@@ -1,0 +1,89 @@
+//天气预测信息 
+{
+	"status":"1",
+	"count":"1",
+	"info":"OK",
+	"infocode":"10000",
+	"forecasts":
+	[
+		{
+			"city":"东城区",
+			"adcode":"110101",
+			"province":"北京",
+			"reporttime":"2020-01-04 19:37:41",
+			"casts":
+			[
+				{
+					"date":"2020-01-04",
+					"week":"6",
+					"dayweather":"晴",
+					"nightweather":"晴",
+					"daytemp":"9",
+					"nighttemp":"-4",
+					"daywind":"东南",
+					"nightwind":"东南",
+					"daypower":"≤3",
+					"nightpower":"≤3"
+				},
+				{
+					"date":"2020-01-05",
+					"week":"7",
+					"dayweather":"小雪",
+					"nightweather":"小雪",
+					"daytemp":"3",
+					"nighttemp":"-4",
+					"daywind":"北",
+					"nightwind":"北",
+					"daypower":"≤3",
+					"nightpower":"≤3"
+				},
+				{
+					"date":"2020-01-06",
+					"week":"1",
+					"dayweather":"多云",
+					"nightweather":"多云",
+					"daytemp":"6",
+					"nighttemp":"-3",
+					"daywind":"北",
+					"nightwind":"北",
+					"daypower":"≤3",
+					"nightpower":"≤3"
+				},
+				{
+					"date":"2020-01-07",
+					"week":"2",
+					"dayweather":"多云",
+					"nightweather":"多云",
+					"daytemp":"4",
+					"nighttemp":"-3",
+					"daywind":"北",
+					"nightwind":"北",
+					"daypower":"≤3",
+					"nightpower":"≤3"
+				}
+			]
+		}
+	]
+}
+
+//天气实况信息 
+{
+	"status":"1",
+	"count":"1",
+	"info":"OK",
+	"infocode":"10000",
+	"lives":
+	[
+		{
+			"province":"天津",
+			"city":"天津市",
+			"adcode":"120000",
+			"weather":"晴",
+			"temperature":"-1",
+			"winddirection":"东北",
+			"windpower":"≤3",
+			"humidity":"94",
+			"reporttime":"2020-01-05 00:03:38"
+		}
+	]
+}

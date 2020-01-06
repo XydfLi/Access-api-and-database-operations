@@ -1,0 +1,57 @@
+mysql -u root -p
+123456789
+
+create database weatherconditions;
+use weatherconditions;
+
+create table cityid(
+adcode char(10),
+city char(20)
+)engine=innodb default charset=utf8;
+
+create table livewea(
+adcode char(10),
+weather char(20),
+temperature char(10),
+winddirection char(10),
+windpower char(10),
+humidity char(10),
+reporttime char(25)
+)engine=innodb default charset=utf8;
+
+create table daywea(
+adcode char(10),
+dates char(25),
+week char(10),
+dayweather char(20),
+daytemp char(10),
+daywind char(10),
+daypower char(10)
+)engine=innodb default charset=utf8;
+
+create table nightwea(
+adcode char(10),
+dates char(25),
+week char(10),
+nightweather char(20),
+nighttemp char(10),
+nightwind char(10),
+nightpower char(10)
+)engine=innodb default charset=utf8;
+
+select * from cityid;
+select * from livewea;
+select * from daywea;
+select * from nightwea;
+
+delete from cityid;
+delete from livewea;
+delete from daywea;
+delete from nightwea;
+
+mysqldump -u root -p weatherconditions > C:\users\me\desktop\mysql\weatherconditions.sql
+mysqldump -u root -p weatherconditions livewea > C:\users\me\desktop\mysql\weatherconditions_cityid.sql
+mysqldump -u root -p weatherconditions livewea > C:\users\me\desktop\mysql\weatherconditions_livewea.sql
+mysqldump -u root -p weatherconditions livewea > C:\users\me\desktop\mysql\weatherconditions_daywea.sql
+mysqldump -u root -p weatherconditions livewea > C:\users\me\desktop\mysql\weatherconditions_nightwea.sql
+mysqldump -u root -p -d --add-drop-table weatherconditions > C:\users\me\desktop\mysql\weatherconditions_stru.sql
